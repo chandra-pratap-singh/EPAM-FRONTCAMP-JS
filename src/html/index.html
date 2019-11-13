@@ -7,92 +7,24 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <div class = "container-fluid">
-            <div class = "row">
-                <div class = "col header">
-                        <span class = "logo">NEWSFEED</span>
-                        <span>Yet another newsfeed</span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col header">
+                    <span class="logo">NEWSFEED</span>
+                    <span>Yet another newsfeed</span>
                 </div>
             </div>
-            <div class = "row main">
-                <div class="col-md-9" id = "content">
-                    <div class = "row set">
-                        <div class = "col-md-5 col-lg-4 col-xl-3">
-                            <div class = "image-container">
-
-                            </div>
-                        </div>
-                        <div class = "col-md-7 col-lg-8 col-xl-9">
-                            <h1>Title One</h1>
-                            <div class = "small"> posted on 29 June, 2019 // Category: Category One </div>
-                            <br>
-                            <div class = "message">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellendus, obcaecati quos voluptas saepe labore, eius eos vel dolores ratione porro repellat facere nisi accusamus fuga. Possimus earum amet aliquam?
-                            </div>
-                            <br>
-                            <div class = "continue-reading">
-                                <button type="button" data-toggle="modal" data-target="#myModal" class = "btn btn-primary continue-reading-button"> Continue Reading </button><!--working-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class = "col-md-3 right">
-                    <div class = "row select-category">
-                    <h5>SELECT CATEGORY</h5>
-                    <select>
-                        <option>All</option>
-                    </select>
-                    </div>
-                    <br>
-                    <div class = "subscribe row">
-                        <div class = "col">
-                            <div class = "row"><h5>SUBSCRIBE</h5></div>
-                            <div class = "row">
-                            <div class = "col-8 col-md-12 col-xl-8 mail-input-box-container"><input type = "text" id = "mail" class = "mail-input-box"></div><div class = "col-4 col-md-12 col-xl-4 subscribe-button-container"><button class = "subscribe-button">Subscribe</button></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+            <div class="row main" id="main">
             </div>
-            <!---->
-            <div class = "row">
-                <div class = "col footer">
+            <div class="row">
+                <div class="col footer">
                     <center>&copy; NewsFeed 2019</center>
                 </div>
             </div>
         </div>
-
-<div class = "row">
-<div class = "col">
-                  <!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-            </div>
-        </div>
-
     </body>
-    <!-- jQuery library -->
+
+<!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!-- Popper JS -->
@@ -100,4 +32,8 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- External js file -->
+<script src = "../js/data_file.js"></script>
+<script src="../js/script.js"></script>
 </html>

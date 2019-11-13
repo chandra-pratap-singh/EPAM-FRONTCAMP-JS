@@ -1,3 +1,4 @@
+// This file containes news feeds to be rendered on page
 data = [
     {
        title: "Title1",
