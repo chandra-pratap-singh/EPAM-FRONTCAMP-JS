@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: 100%;
+    overflow-x:hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+    width:100%;
+}
+.head{
+    padding: 40px;
+    background-color: rgb(39,56,82);
+    color: white;
+}
+.logo{
+    margin-right: 30px;
+    font-size: 22px;
+}
+.left-content{
+    width:75%;
+    float:left;
+}
+.right-content{
+    width:20%;
+    float:right;
+}
+.full-content{
+    padding: 20px;
+}
+.article{
+    padding: 40px;
+    width:100%;
+    border-bottom: 0.5px solid lightgray;
+}
+.article:hover{
+    background-color: rgb(234, 246, 250);
+    transition:.5s;
+}
+.thumbnail{
+height: 100%;
+width:100%;
+}
+.thumbnail-container{
+    width:15%;
+    height: 200px;
+    float:left;
+}
+.content{
+    width:70%;
+    float:left;
+    margin-left: 20px;
+}
+.Continue-Reading{
+    padding:10px;
+    background-color: rgb(209,95,71);
+    color: white;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.Continue-Reading:hover{
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+hr{
+    border: 0.5px solid lightgray;
+}
+select{
+    width: 76%;
+    padding: 10px;
+}
+option{
+    padding: 10px;
+}
+.subscribe-button{
+    background-color: black;
+    color: white;
+    border-color: black;
+    padding: 10px;
+}
+input[type=text]{
+    padding: 10px;
+}
+input:focus {
+    outline: none;
+}
+.footer{
+    width:100%;
+    height: 30px;
+    position: relative;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    padding:20px;
+    text-align: center;
+    background-color: rgb(39,56,82);
+    color: white;
+}
+
+@media(max-width:1500px)
+{
+    .left-content{
+        width:70%;
+    }
+    .thumbnail-container{
+        height:175px;
+    }
+    input{
+        width:50%;
+    }
+}
+
+@media(max-width:1300px){
+    .thumbnail-container{
+        width:25%;
+        height: 200px;
+        float:left;
+    }
+    .content{
+        width:70%;
+        float:left;
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 950px){
+    .right-content{
+        float: none;
+        width: 100%;
+    }
+    .left-content{
+        float: none;
+        width:100%;
+    }
+    .thumbnail-container{
+        height:150px;
+    }
+    .article{
+        padding: 40px;
+        width:80%;
+        margin: 0px auto;
+    }
+}
+
+@media(max-width:700px)
+{
+    .thumbnail-container{
+        width:100%;
+        height: 300px;
+        margin: 0px auto;
+        float:none;
+    }
+    .content{
+        width:100%;
+        float:none;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .write-up{
+        text-align: justify;
+    }
+}
