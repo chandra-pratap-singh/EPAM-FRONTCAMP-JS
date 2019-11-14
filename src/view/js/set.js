@@ -2,8 +2,8 @@ import {ele} from "../../controller/element.js"
 import {update_modal} from "../../controller/update_modal.js"
 import {modal} from "./modal.js"
 
-// This class hold the template for a single news feed
 class set{
+    //let (set, image_container, thumb_nail, content, title, sub_title, message, continue_reading_button)
     constructor(news)
     {
         this.news = news
@@ -37,7 +37,13 @@ class set{
         this.content.appendChild(this.continue_reading_button)
         this.set.appendChild(this.image_container)
         this.set.appendChild(this.content)
+
+        //console.log(news)
     }
+
+
+   
+
 }
 
 export {set};

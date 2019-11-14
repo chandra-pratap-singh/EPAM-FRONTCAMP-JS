@@ -1,0 +1,16 @@
+// {
+//     "presets": ["@babel/preset-env"]
+// }
+
+{
+    "presets": [
+      [ "@babel/preset-env", {
+        "targets": {
+          "browsers": [ "last 1 version", "ie >= 11" ],
+          "node": "6.10",
+          "esmodules": true
+        }
+      }]
+    ],
+    "plugins": ["@babel/plugin-proposal-object-rest-spread"]
+  }
