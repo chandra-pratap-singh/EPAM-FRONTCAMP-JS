@@ -1,8 +1,9 @@
+//This is a news class whose object will hold the news from data send from api
+
 class news{
-    //let(image_url, title, discription, sub_title, message, origin_url)
     constructor(json_obj)
     {
-        //console.log(json_obj)
+        //destructuring is used here
         [this.image_url, this.title, this.description, this.sub_title, 
         this.message, this.origin_url ] = 
         [json_obj.urlToImage, json_obj.title, json_obj.description, 

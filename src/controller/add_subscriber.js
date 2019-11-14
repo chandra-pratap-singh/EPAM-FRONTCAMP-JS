@@ -1,5 +1,6 @@
 import {myStorage} from "../model/subscribers.js"
 
+//check if storage space is available
 function storageAvailable(type) {
     var storage;
     try {
@@ -25,6 +26,7 @@ function storageAvailable(type) {
     }
 }
 
+//if storage space is available store is it array and alert success else simply alert failure.
 let add_subscriber = (email_id) =>
 {
     if (storageAvailable('localStorage'))

@@ -1,16 +1,25 @@
 import {ele} from "../../controller/element.js";
 import {newsChannels} from "../../model/chennel_list.js"
 
-let right = ele("div", "col-md-3 right")
-let select_category = ele("h3","","Select Category")
-let select = ele("select", "category")
-select.id = "category"
-newsChannels.forEach(Element => {
-    select.append(ele("option", "channel-option", Element, Element.toLowerCase().replace(" ", "-")))
-} )
-//select.append(ele("option", "channel-option", "bbc-news", "bbc-news"))
-right.appendChild(select_category)
-right.appendChild(select)
+// This class is about the right section of the webpage where select channel will be present
+class right_section{
+    constructor(){
+        this.right_section_element = ele("div", "col-md-3 right")
+        this.select_category = ele("h3","","Select Category")
+        this.select = ele("select", "category")
+        this.select.id = "category"
+        newsChannels.forEach(Element => {
+            this.select.append(ele("option", "channel-option", Element, Element.toLowerCase().replace(" ", "-")))
+        } )
+        this.right_section_element.appendChild(this.select_category)
+        this.right_section_element.appendChild(this.select)
+    }
+
+    //This function will return the right section element to render on homepage
+    get_right_section_element(){
+        return this.right_section_element;
+    }
+}
 
 
-export {right}
+export {right_section}

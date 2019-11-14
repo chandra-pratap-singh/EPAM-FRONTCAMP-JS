@@ -1,6 +1,8 @@
 import { set } from "../view/js/set.js";
 import { news } from "../model/news.js";
 import {ele} from "./element.js"
+
+//This function fetches the news from api and updates the news section
 let fetch_news = async (url) =>
 {
     try {

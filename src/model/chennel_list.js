@@ -1,3 +1,4 @@
+// This array contains the list of available channels
 let newsChannels = [
     'All',
     'Focus',

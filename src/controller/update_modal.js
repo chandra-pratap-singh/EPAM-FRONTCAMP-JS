@@ -1,5 +1,5 @@
 import {modal} from "../view/js/modal.js"
-
+//This function updates the content of modal on click of continue reading button
 let update_modal = (news) =>
 {
     document.getElementById("modal-title").innerHTML = news.title;
